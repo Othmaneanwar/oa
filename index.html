@@ -5,13 +5,237 @@
 
   <meta charset="utf-8">
   <title>Othmane ANWAR</title>
-  <link rel="shortcut icon" href="https://i.imgur.com/fmwd5eU.png">
+  <link rel="shortcut icon" href="https://i.imgur.com/WohI0KF.png">
   <!-- Google Fonts <-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Raleway:300,400,900&display=swap" rel="stylesheet">
 
   <!-- Bootstrap & CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <style>
+  * {
+    padding: 0;
+    margin: 0;
+    transition-duration: 0.2s;
+  }
+
+  body {
+    font-family: "Raleway";
+    color: #363062;
+  }
+
+  h1 {
+    font-family: "Montserrat";
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .buttonwannabes {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: #363062;
+    color: #fff;
+    font-weight: bolder;
+    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+  }
+
+  .buttonwannabes:hover {
+    padding: 15px 20px 15px 40px;
+  }
+
+  /* Nav Bar */
+  .navbar {
+    width: 100%;
+  }
+
+  .childnavbar {
+    padding: 5% 20%;
+  }
+
+  .childnavbar img {
+    height: 55px;
+  }
+
+  .childnavbar ul {
+    margin-top: 20px;
+    font-size: 15px;
+    float: right;
+    list-style: none;
+  }
+
+  .childnavbar a {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-left: 50px;
+    color: #d8d8d8;
+  }
+
+  .childnavbar a:hover {
+    font-weight: bolder;
+    padding: 10px 13px 10px 27px;
+    background-color: #363062;
+    color: #fff;
+    margin-left: 49px;
+  }
+
+  .childnavbar .fixeday:hover {
+    margin-left: 48px;
+  }
+
+  .childnavbar li {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  /* Body */
+  .wbody {
+    padding: 0 10%;
+  }
+
+  .subwb {
+    border-radius: 60px;
+    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+    background-color: white;
+    padding: 6%;
+  }
+
+  .subs {
+    margin-top: 10%;
+  }
+
+  /* Welcome */
+  .welcome {
+    text-align: right;
+  }
+
+  .subwelcome {
+    line-height: 1.15;
+    text-align: right;
+    width: 55%;
+    float: left;
+  }
+
+  .welcome img {
+    width: 50%;
+    margin-right: -10%;
+  }
+
+  /* About */
+  .subabout img {
+    width: 40%;
+    margin: 0 6% 0 -10%;
+    border-radius: 30px;
+  }
+
+  .h1np {
+    text-align: justify;
+    width: 64%;
+    float: right;
+  }
+
+  /* Portfolio */
+  .folioitems {
+    margin: 40px 0 60px;
+  }
+
+  .folioitemz {
+    margin: 2.5% -10%;
+    background-color: white;
+  }
+
+  .folioitem {
+    border-radius: 30px;
+    display: inline-block;
+    width: 32%;
+    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+  }
+
+  .folioitem img {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+  }
+
+  .folioitem h2 {
+    font-weight: 400;
+    padding: 10px 20px 15px;
+  }
+
+  .folioitem:hover .hoverable {
+  padding: 10px 5px 15px 35px;
+  }
+
+  .fixer {
+    margin: 0 1.6%;
+  }
+
+  /* Contact */
+  form {
+    margin: 40px -10% 60px -10%;
+  }
+
+  .subcontact input, .subcontact textarea {
+    font-family: "Raleway";
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+    font-size: 1rem;
+  }
+
+  .subcontact input {
+    padding: 10px 20px;
+    width: 46%;
+  }
+
+  .stin {
+    margin-right: 17px;
+  }
+
+  .subcontact textarea {
+    padding: 15px 20px;
+    min-height: 200px;
+    margin-top: 20px;
+    min-width: 96.7%;
+    max-width: 96.7%;
+  }
+
+  /* Footer */
+  .subfooter {
+    padding: 5% 20%;
+    text-align: center;
+  }
+
+  .subfooter img {
+    width: 10%;
+  }
+
+  .as {
+    padding: 20px;
+  }
+
+  .as a {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    color: #d8d8d8;
+  }
+
+  .as a:hover {
+    color: #363062;
+  }
+
+  .subfooter p {
+    color: #d8d8d8;
+  }
+
+  .subfooter span {
+    color: #363062;
+  }
+
+  </style>
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/f61ecc7f86.js" crossorigin="anonymous"></script>
@@ -20,119 +244,104 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <style>
-  
-  body {
-  margin: 0;
-}
 
-/* Side Nav Bar */
-.sidenav {
-  background-color: #fefefe;
-  position: fixed;
-  width: auto;
-  height: 100%;
-  box-shadow: -7px 0px 15px 5px rgba(0, 0, 0, 0.26);
-  z-index: 99;
-}
-
-.sidenav-content .stul {
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  color: #fefefe;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.sidenav-content .stul li {
-  background-color: #293a80;
-  font-size: 1rem;
-  padding: 10px 20px;
-}
-
-.sidenav-content .stul li:active {
-  padding: 15px 20px 5px 20px;
-  opacity: 0.8;
-}
-
-.sidenav-content .stul li:first-child {
-  padding: 0;
-}
-
-.sidenav-content .stul li:nth-child(2) {}
-
-.sidenav-content .stul li:nth-child(3) {
-  background-color: #537ec5;
-}
-
-.sidenav-content .stul li:nth-child(4) {
-  background-color: #739fdd;
-}
-
-.sidenav-content .socialm-icons {
-  font-size: 1.2rem;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  color: #fefefe;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.sidenav-content .tw {
-  display: inline-block;
-  background-color: #537ec5;
-  width: 50%;
-  padding: 18px 20px;
-}
-
-.sidenav-content .ig {
-  display: inline-block;
-  background-color: #293a80;
-  width: 50%;
-  padding: 18px 20px;
-}
-
-.sidenav-content .socialm-icons i:active {
-  position: relative;
-  bottom: -4px;
-  padding-top: 22px;
-  opacity: 0.8;
-}
-
-/* Portfolio */
-
-  
-  </style>
 </head>
 
 <body>
-
-  <!-- Side Nav Bar -->
-  <div class="sidenav">
-    <div class="sidenav-content">
-      <ul class="stul">
-        <li><img src="https://i.imgur.com/fmwd5eU.png" alt=""></li>
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
+  <div class="navbar">
+    <div class="childnavbar">
+      <img src="https://i.imgur.com/J2Xjw8W.png" alt="">
+      <ul>
+        <a href="#"><li>About</li></a>
+        <a class="fixeday" href="#"><li>Portfolio</li></a>
+        <a href="#"><li>Contact</li></a>
       </ul>
-      <div class="socialm-icons">
-        <i class="tw fab fa-twitter"></i><i class="ig fab fa-instagram"></i>
+    </div>
+  </div>
+  <div class="wbody">
+    <div class="subwb">
+      <div class="welcome">
+        <img src="imgs/wlcimg.png" alt="">
+        <div class="subwelcome">
+          <h1>HELLO, <br>I AM <br> OTHMANE <br>! </h1>
+        </div>
+      </div>
+      <div class="about">
+        <div class="subabout subs">
+          <div class="h1np">
+            <h1>ABOUT ME:</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend turpis. Vestibulum porttitor est quis nunc pellentesque, porttitor molestie risus maximus. Maecenas id magna mauris.<br> <br> Maecenas eu finibus libero.
+              Aenean ut tempor augue, et posuere ex. Ut at ligula eget elit scelerisque porta. In convallis, urna a semper pellentesque, nisl nulla luctus felis, at molestie nisl augue a dui. Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas.<br><br>Maecenas nec magna ipsum. Fusce vel est sed tortor maximus iaculis at vulputate massa. Quisque vel sapien aliquet, luctus mi vel, porttitor lacus. Vivamus est urna, faucibus quis convallis non,
+              suscipit vel eros. Morbi ligula nulla, volutpat in enim at, porta ultricies orci. Nullam sollicitudin eros sed mollis dapibus. Nam mattis vitae orci ac egestas. Pellentesque porta maximus auctor. Fusce nisl magna, lobortis in nunc ut,
+              suscipit facilisis mauris. Nunc volutpat, felis ut accumsan egestas, est felis blandit tortor, at hendrerit tellus metus venenatis nunc. Integer purus massa, molestie ut orci sed, auctor mattis risus. Integer tincidunt mauris consequat,
+              mattis justo ac, egestas eros.<br><br> Nullam non sem sit amet dolor scelerisque tempus a id urna. Phasellus non vestibulum justo. </p>
+          </div>
+          <img src="https://i.imgur.com/nYJkdey.png" alt="">
+        </div>
+      </div>
+      <div class="folio">
+        <div class="subfolio subs">
+          <h1>Latest Partners:</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend turpis. Vestibulum porttitor est quis nunc pellentesque, porttitor molestie risus maximus. Maecenas id magna mauris.</p>
+          <div class="folioitems">
+            <div class="folioitemz">
+              <div class="folioitem">
+                <img src="https://i.imgur.com/opVOscc.png" alt="">
+                <h2 class="hoverable">Example 1</h2>
+              </div>
+              <div class="folioitem fixer">
+                <img src="https://i.imgur.com/opVOscc.png" alt="">
+                <h2 class="hoverable">Example 2</h2>
+              </div>
+              <div class="folioitem">
+                <img src="https://i.imgur.com/opVOscc.png" alt="">
+                <h2 class="hoverable">Example 3</h2>
+              </div>
+            </div>
+            <div class="folioitemz">
+              <div class="folioitem">
+                <img src="https://i.imgur.com/opVOscc.png" alt="">
+                <h2 class="hoverable">Example 4</h2>
+              </div>
+              <div class="folioitem fixer">
+                <img src="https://i.imgur.com/opVOscc.png" alt="">
+                <h2 class="hoverable">Example 5</h2>
+              </div>
+              <div class="folioitem">
+                <img src="https://i.imgur.com/opVOscc.png" alt="">
+                <h2 class="hoverable">Example 6</h2>
+              </div>
+            </div>
+          </div>
+          <a class="buttonwannabes" href="#">CHECK OUT MORE <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="subcontact subs">
+          <h1>CONTACT:</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend turpis. Vestibulum porttitor est quis nunc pellentesque, porttitor molestie risus maximus. Maecenas id magna mauris.</p>
+          <form>
+            <input class="stin" type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email"><br>
+            <textarea type="text" placeholder="Message"></textarea><br>
+          </form>
+          <a class="buttonwannabes" href="#">SUBMIT</a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- END of Side Nav Bar -->
-
-
-  <!-- Portfolio -->
-  
-
-
+  <div class="footer">
+    <div class="subfooter">
+      <img src="https://i.imgur.com/J2Xjw8W.png" alt="">
+      <div class="as">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; Copyright 2020, <span>Othmane ANWAR</span></p>
+    </div>
+  </div>
 </body>
 
 </html>
