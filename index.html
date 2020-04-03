@@ -8,232 +8,312 @@
   <link rel="shortcut icon" href="https://i.imgur.com/VPJ6Bk1.png">
   <!-- Google Fonts <-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Raleway:300,400,900&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap & CSS -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  
   <style>
-  * {
-    padding: 0;
-    margin: 0;
-    transition-duration: 0.2s;
-  }
+  html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
 
-  body {
-    font-family: "Raleway";
-    color: #363062;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  transition-duration: 0.2s;
+}
 
-  h1 {
-    font-family: "Montserrat";
-    font-size: 6rem;
-  }
+body {
+  font-family: "Raleway";
+  color: #363062;
+}
 
-  p {
-    font-size: 14px;
-  }
+.logo {
+  opacity: 0.2;
+}
 
-  .buttonwannabes {
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    background-color: #363062;
-    color: #fff;
-    font-weight: bolder;
-    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
-  }
+.logo:hover {
+  opacity: 1;
+}
 
-  .buttonwannabes:hover {
-    padding: 15px 20px 15px 40px;
-  }
+h1 {
+  font-family: "Montserrat";
+  font-size: 6rem;
+}
 
-  /* Nav Bar */
-  .navbar {
-    width: 100%;
-  }
+p {
+  font-size: 14px;
+}
 
-  .childnavbar {
-    padding: 5% 20%;
-  }
+.buttonwannabes {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: #363062;
+  color: #fff;
+  font-weight: bolder;
+  box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+}
 
-  .childnavbar img {
-    height: 55px;
-  }
+.buttonwannabes:hover {
+  padding: 15px 20px 15px 40px;
+}
 
-  .childnavbar ul {
-    margin-top: 20px;
-    font-size: 15px;
-    float: right;
-    list-style: none;
-  }
+/* Nav Bar */
+.navbar {
+  width: 100%;
+}
 
-  .childnavbar a {
-    border: none;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin-left: 50px;
-    color: #d8d8d8;
-  }
+.childnavbar {
+  padding: 5% 20%;
+}
 
-  .childnavbar a:hover {
-    font-weight: bolder;
-    padding: 10px 13px 10px 27px;
-    background-color: #363062;
-    color: #fff;
-    margin-left: 49px;
-  }
+.childnavbar img {
+  height: 55px;
+}
 
-  .childnavbar .fixeday:hover {
-    margin-left: 48px;
-  }
+.childnavbar ul {
+  margin-top: 20px;
+  font-size: 1rem;
+  float: right;
+  list-style: none;
+}
 
-  .childnavbar li {
-    display: inline-block;
-    text-transform: uppercase;
-  }
+.childnavbar a {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-left: 50px;
+  color: #d7d6e0;
+}
 
-  /* Body */
-  .wbody {
-    padding: 0 10%;
-  }
+.childnavbar a:hover {
+  font-weight: bolder;
+  padding: 10px 12px 10px 28px;
+  background-color: #363062;
+  color: #fff;
+  margin-left: 49px;
+}
 
-  .subwb {
-    border-radius: 60px;
-    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
-    background-color: white;
-    padding: 6%;
-  }
+.childnavbar .fixeday:hover {
+  margin-left: 48px;
+}
 
-  .subs {
-    margin-top: 10%;
-  }
+.childnavbar li {
+  display: inline-block;
+  text-transform: uppercase;
+}
 
-  /* Welcome */
-  .welcome {
-    text-align: right;
-  }
+/* Body */
+.wbody {
+  padding: 0 10%;
+}
 
-  .subwelcome {
-    line-height: 1.15;
-    text-align: right;
-    width: 55%;
-    float: left;
-  }
+.subwb {
+  border-radius: 60px;
+  box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+  background-color: white;
+  padding: 6%;
+}
 
-  .welcome img {
-    width: 50%;
-    margin-right: -10%;
-  }
+.subs {
+  margin-top: 20%;
+}
 
-  /* About */
-  .subabout img {
-    width: 40%;
-    margin: 0 6% 0 -10%;
-    border-radius: 30px;
-  }
+/* Welcome */
+.welcome {
+  text-align: right;
+}
 
-  .h1np {
-    text-align: justify;
-    width: 64%;
-    float: right;
-  }
+.subwelcome {
+  line-height: 1.15;
+  text-align: right;
+  width: 55%;
+  float: left;
+}
 
-  /* Portfolio */
-  .folioitems {
-    margin: 40px 0 60px;
-  }
+.subwelcome h1 {
+  text-transform: uppercase;
+  transition-duration: .2s;
+}
 
-  .folioitemz {
-    margin: 2.5% -10%;
-    background-color: white;
-  }
+.hello {
+  display: none;
+}
 
-  .folioitem {
-    border-radius: 30px;
-    display: inline-block;
-    width: 32%;
-    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
-  }
+.subwelcome span:hover {
+  text-transform: none;
+}
 
-  .folioitem img {
-    border-radius: 30px 30px 0 0;
-    width: 100%;
-  }
+.subwelcome span:hover .byebye {
+  display: none;
+}
 
-  .folioitem h2 {
-    font-weight: 400;
-    padding: 10px 20px 15px;
-  }
+.subwelcome span:hover .hello {
+  display: inline;
+}
 
-  .folioitem:hover .hoverable {
-  padding: 10px 5px 15px 35px;
-  }
+.subwelcome a i {
+  font-size: 4rem;
+  padding: 7px 17px 3px;
+  border-radius: 100px;
+  background-color: #363062;
+  color: #fff;
+  box-shadow: 0px 0px 40px -2px rgba(216, 185, 195, 0.2);
+  margin-top: 20px;
+}
 
-  .fixer {
-    margin: 0 1.6%;
-  }
+.subwelcome a:hover i {
+  padding: 10px 17px 0;
+}
 
-  /* Contact */
-  form {
-    margin: 40px -10% 60px -10%;
-  }
+.welcome img {
+  width: 50%;
+  margin-right: -10%;
+}
 
-  .subcontact input, .subcontact textarea {
-    font-family: "Raleway";
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
-    font-size: 1rem;
-  }
+.welcome img:hover {
+  margin: -10px -10% 10px 0;
+}
 
-  .subcontact input {
-    padding: 10px 20px;
-    width: 46%;
-  }
+/* About */
+.subabout img {
+  width: 40%;
+  margin: 0 6% 0 -10%;
+  border-radius: 30px;
+}
 
-  .stin {
-    margin-right: 17px;
-  }
+.subabout:hover img {
+  width: 41%;
+  transform: rotate(-3deg);
+  margin-right: -1%;
+  margin-bottom: -1%;
+  box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+}
 
-  .subcontact textarea {
-    padding: 15px 20px;
-    min-height: 200px;
-    margin-top: 20px;
-    min-width: 96.7%;
-    max-width: 96.7%;
-  }
+.h1np {
+  text-align: justify;
+  width: 64%;
+  float: right;
+}
 
-  /* Footer */
-  .subfooter {
-    padding: 5% 20%;
-    text-align: center;
-  }
+/* Portfolio */
+.folioitems {
+  margin: 40px 0 60px;
+}
 
-  .subfooter img {
-    width: 10%;
-  }
+.folioitemz {
+  margin: 2.5% -10%;
+  background-color: white;
+}
 
-  .as {
-    padding: 20px;
-  }
+.folioitem {
+  border-radius: 30px;
+  display: inline-block;
+  width: 32%;
+  box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+}
 
-  .as a {
-    font-size: 1.5rem;
-    padding: 0 20px;
-    color: #d8d8d8;
-  }
+.folioitem img {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+}
 
-  .as a:hover {
-    color: #363062;
-  }
+.folioitem:hover img {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
 
-  .subfooter p {
-    color: #d8d8d8;
-  }
+.folioitem h2 {
+  font-weight: 400;
+  padding: 10px 20px 15px;
+}
 
-  .subfooter span {
-    color: #363062;
-  }
+.folioitem:hover .hoverable {
+padding: 10px 5px 15px 35px;
+}
+
+.fixer {
+  margin: 0 1.6%;
+}
+
+/* Contact */
+form {
+  position: relative;
+  margin: 40px -10% 60px -10%;
+}
+
+.subcontact input, .subcontact textarea {
+  font-family: "Raleway";
+  border: none;
+  color: rgba(54,48,98,1);
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px -3px rgba(216, 185, 195, 0.2);
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: rgba(54,48,98,0.5);
+}
+
+.subcontact input {
+  padding: 1% 2%;
+  display: inline-block;
+  width: 45%;
+}
+
+.stin {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2%;
+}
+
+.ndin {
+  position: absolute;
+  right: 0;
+}
+
+.subcontact textarea {
+  padding: 2%;
+  min-height: 200px;
+  min-width: 96%;
+  max-width: 96%;
+}
+
+.subcontact a {
+  margin-bottom: 20%;
+}
+
+/* Footer */
+.subfooter {
+  padding: 5% 20%;
+  text-align: center;
+}
+
+.subfooter img {
+  width: 10%;
+}
+
+.as {
+  padding: 20px;
+}
+
+.as a {
+  font-size: 1.5rem;
+  padding: 0 20px;
+  color: #d7d6e0;
+}
+
+.as a:hover {
+  color: #363062;
+}
+
+.subfooter p {
+  color: #d7d6e0;
+}
+
+.subfooter span {
+  color: #363062;
+}
 
   </style>
 
@@ -252,9 +332,9 @@
     <div class="childnavbar">
       <img src="https://i.imgur.com/J2Xjw8W.png" alt="">
       <ul>
-        <a href="#"><li>About</li></a>
-        <a class="fixeday" href="#"><li>Portfolio</li></a>
-        <a href="#"><li>Contact</li></a>
+        <a href="#about"><li>About</li></a>
+        <a class="fixeday" href="#portfolio"><li>Portfolio</li></a>
+        <a href="#contact"><li>Contact</li></a>
       </ul>
     </div>
   </div>
@@ -263,13 +343,16 @@
       <div class="welcome">
         <img src="https://i.imgur.com/4aWMOWu.png" alt="">
         <div class="subwelcome">
-          <h1>HELLO, <br>I AM <br> OTHMANE <br>! </h1>
+          <h1><span>hElLO,<br>i aM<br><span class="byebye">oThmANe</span><span class="hello">O THE MAN!</span><br></span></h1>
+          <a href="#about"><i class="fas fa-angle-down"></i></a>
         </div>
       </div>
+      <div id="about"></div>
+      <div class="subs"></div>
       <div class="about">
-        <div class="subabout subs">
+        <div class="subabout">
           <div class="h1np">
-            <h1>ABOUT ME:</h1>
+            <h1>About Me:</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend turpis. Vestibulum porttitor est quis nunc pellentesque, porttitor molestie risus maximus. Maecenas id magna mauris.<br> <br> Maecenas eu finibus libero.
               Aenean ut tempor augue, et posuere ex. Ut at ligula eget elit scelerisque porta. In convallis, urna a semper pellentesque, nisl nulla luctus felis, at molestie nisl augue a dui. Pellentesque habitant morbi tristique senectus et netus et
               malesuada fames ac turpis egestas.<br><br>Maecenas nec magna ipsum. Fusce vel est sed tortor maximus iaculis at vulputate massa. Quisque vel sapien aliquet, luctus mi vel, porttitor lacus. Vivamus est urna, faucibus quis convallis non,
@@ -280,9 +363,11 @@
           <img src="https://i.imgur.com/nYJkdey.png" alt="">
         </div>
       </div>
+      <div class="subs"></div>
+      <div id="portfolio"></div>
       <div class="folio">
-        <div class="subfolio subs">
-          <h1>MY LATEST WORK:</h1>
+        <div class="subfolio">
+          <h1>Latest Projects:</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend turpis. Vestibulum porttitor est quis nunc pellentesque, porttitor molestie risus maximus. Maecenas id magna mauris.</p>
           <div class="folioitems">
             <div class="folioitemz">
@@ -317,14 +402,15 @@
           <a class="buttonwannabes" href="#">CHECK OUT MORE <i class="fas fa-angle-double-right"></i></a>
         </div>
       </div>
-      <div class="contact">
-        <div class="subcontact subs">
-          <h1>CONTACT:</h1>
+      <div class="subs"></div>
+      <div id="contact" class="contact">
+        <div class="subcontact">
+          <h1>Contact:</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend turpis. Vestibulum porttitor est quis nunc pellentesque, porttitor molestie risus maximus. Maecenas id magna mauris.</p>
           <form>
             <input class="stin" type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email"><br>
-            <textarea type="text" placeholder="Message"></textarea><br>
+            <input class="ndin" type="email" placeholder="Email" required>
+            <textarea type="text" placeholder="Message"></textarea>
           </form>
           <a class="buttonwannabes" href="#">SUBMIT</a>
         </div>
@@ -333,7 +419,7 @@
   </div>
   <div class="footer">
     <div class="subfooter">
-      <img src="https://i.imgur.com/J2Xjw8W.png" alt="">
+      <img class="logo" src="https://i.imgur.com/J2Xjw8W.png" alt="">
       <div class="as">
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
